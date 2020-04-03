@@ -27,7 +27,15 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				</configuration>
+				<cloudHubDeployment>
+      				<uri>https://anypoint.mulesoft.com</uri>
+      				<muleVersion>4.2.2</muleVersion>
+      				<username>danAnypoint</username>
+      				<password>Dan@salesforce19</password>
+      				<applicationName>worldtimezone-app</applicationName>
+      				<environment>Sandbox</environment>
+    			</cloudHubDeployment>
+  		    	</configuration>
 			</plugin>
 		</plugins>
 	</build>
