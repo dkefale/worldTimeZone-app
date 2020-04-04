@@ -28,14 +28,16 @@
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
-      				<muleVersion>4.2.2</muleVersion>
-      				<username>DanAnyPoint</username>
-      				<password>Dan@salesforce19</password>
-      				<applicationName>worldtimezone-service</applicationName>
-      				<workers>1</workers>
-      				<workerType>Micro</workerType>
-      				<environment>Sandbox</environment>
-    			</cloudHubDeployment>
+      				<uri>https://anypoint.mulesoft.com</uri>
+      				<muleVersion>${app.runtime}</muleVersion>
+     				<username>${username}</username>
+     				<password>${password}</password>
+      				<applicationName>${cloudhub.application.name}</applicationName>
+      				<environment>${environment}</environment>
+      				<properties>
+        				<key>value</key>
+     				</properties>
+      			</cloudHubDeployment>
   		    	</configuration>
 			</plugin>
 		</plugins>
