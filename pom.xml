@@ -32,7 +32,7 @@
       				<muleVersion>4.2.2</muleVersion>
       				<username>danAnypoint</username>
       				<password>Dan@salesforce19</password>
-      				<applicationName>worldtimezone-app</applicationName>
+      				<applicationName>worldtimezone-service</applicationName>
       				<environment>Sandbox</environment>
     			</cloudHubDeployment>
   		    	</configuration>
