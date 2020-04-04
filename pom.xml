@@ -29,7 +29,7 @@
 				<configuration>
 				<cloudHubDeployment>
       				<muleVersion>4.2.2</muleVersion>
-      				<username>danAnypoint</username>
+      				<username>DanAnyPoint</username>
       				<password>Dan@salesforce19</password>
       				<applicationName>worldtimezone-service</applicationName>
       				<workers>1</workers>
