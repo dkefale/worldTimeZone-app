@@ -32,6 +32,8 @@
       				<username>danAnypoint</username>
       				<password>Dan@salesforce19</password>
       				<applicationName>worldtimezone-service</applicationName>
+      				<workers>1</workers>
+      				<workerType>Micro</workerType>
       				<environment>Sandbox</environment>
     			</cloudHubDeployment>
   		    	</configuration>
