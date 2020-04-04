@@ -28,7 +28,6 @@
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
-      				<uri>https://anypoint.mulesoft.com</uri>
       				<muleVersion>4.2.2</muleVersion>
       				<username>danAnypoint</username>
       				<password>Dan@salesforce19</password>
