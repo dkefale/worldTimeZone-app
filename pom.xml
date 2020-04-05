@@ -30,12 +30,12 @@
 				<cloudHubDeployment>
       				<uri>https://anypoint.mulesoft.com</uri>
       				<muleVersion>${app.runtime}</muleVersion>
-     				<username>${username}</username>
-     				<password>${password}</password>
-      				<applicationName>${cloudhub.application.name}</applicationName>
-      				<environment>${environment}</environment>
+     				<username>DanAnyPoint</username>
+     				<password>Dan@salesforce19</password>
+      				<applicationName>worldtimeapp</applicationName>
+      				<environment>4.2.2</environment>
       				<properties>
-        				<key>value</key>
+        				<http.port>8089</http.port>
      				</properties>
       			</cloudHubDeployment>
   		    	</configuration>
