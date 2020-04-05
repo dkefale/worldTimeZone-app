@@ -34,10 +34,7 @@
      				<password>Dan@salesforce19</password>
       				<applicationName>worldtimeapp</applicationName>
       				<environment>Sandbox</environment>
-      				<properties>
-        				<http.port>8089</http.port>
-     				</properties>
-      			</cloudHubDeployment>
+       			</cloudHubDeployment>
   		    	</configuration>
 			</plugin>
 		</plugins>
