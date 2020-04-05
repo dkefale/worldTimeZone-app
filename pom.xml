@@ -33,7 +33,7 @@
      				<username>DanAnyPoint</username>
      				<password>Dan@salesforce19</password>
       				<applicationName>worldtimeapp</applicationName>
-      				<environment>4.2.2</environment>
+      				<environment>Sandbox</environment>
       				<properties>
         				<http.port>8089</http.port>
      				</properties>
