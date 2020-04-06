@@ -16,7 +16,7 @@ pipeline {
 	stage ('Perform Regression Testing')
 		{
 		steps {
-		bat 'CD C:\\Users\\dkefale\\AppData\\Roaming\\npm\\ newman run D:\\Personal\\Tutor\\MuleSoft\\Lab\\file\\postman\\WorldTimezone.postman_collection.json' 
+		bat 'C:\\Users\\dkefale\\AppData\\Roaming\\npm\\newman run D:\\Personal\\Tutor\\MuleSoft\\Lab\\file\\postman\\WorldTimezone.postman_collection.json' 
 		}
 		}
 	}
