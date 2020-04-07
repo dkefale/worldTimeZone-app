@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="world-demo-api-test-suite.xml" />
+	<munit:test name="world-demo-api-test-suite-world-demo-apiFlowTest" doc:id="7aae92b1-2643-431c-bfad-1195a4c15c7d" description="Test">
+		<munit:execution >
+			<munit:set-event doc:name="Set Event" doc:id="af6d7045-450f-4f2a-9143-3e292d26eeff" >
+				<munit:attributes value="#[{uriParams : { region : 'Asia', city : 'Kolkata'}}]" />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to world-demo-apiFlow" doc:id="b0a3a7ae-6df0-4e11-82aa-d182a27ebb2f" name="world-demo-apiFlow"/>
+		</munit:execution>
+		<munit:validation>
+			<munit-tools:assert doc:name="Assert expression" doc:id="876a40fd-12eb-4075-a655-58015a82574d" />
+		</munit:validation>
+	</munit:test>
+
+
+</mule>
