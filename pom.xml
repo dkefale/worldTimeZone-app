@@ -35,6 +35,7 @@
       				<environment>Sandbox</environment>
        			</cloudHubDeployment>
   		    	</configuration>
+  		    	
 			</plugin>
 		<plugin>
                 <groupId>com.mulesoft.munit.tools</groupId>
