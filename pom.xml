@@ -9,7 +9,6 @@
 
 	<name>world-demo-api</name>
 	
-
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -32,7 +31,7 @@
       				<muleVersion>${app.runtime}</muleVersion>
      				<username>DanAnyPoint</username>
      				<password>Dan@salesforce19</password>
-      				<applicationName>worldtimeapp-api</applicationName>
+      				<applicationName>worldtime-app-api</applicationName>
       				<environment>Sandbox</environment>
        			</cloudHubDeployment>
   		    	</configuration>
