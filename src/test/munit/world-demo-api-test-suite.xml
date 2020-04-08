@@ -10,15 +10,31 @@
 	<munit:config name="world-demo-api-test-suite.xml" />
 	<munit:test name="world-demo-api-test-suite-world-demo-apiFlowTest" doc:id="7aae92b1-2643-431c-bfad-1195a4c15c7d" description="Test">
 		<munit:execution >
-			<munit:set-event doc:name="Set Event" doc:id="af6d7045-450f-4f2a-9143-3e292d26eeff" >
-				<munit:attributes value="#[{uriParams : { region : 'Asia', city : 'Kolkata'}}]" />
-			</munit:set-event>
+			<flow-ref doc:name="Flow Reference" doc:id="70ba50f8-1ebc-4508-8aa0-983040b42c1a" name="world-demo-api-test-suiteFlow"/>
 			<flow-ref doc:name="Flow-ref to world-demo-apiFlow" doc:id="b0a3a7ae-6df0-4e11-82aa-d182a27ebb2f" name="world-demo-apiFlow"/>
 		</munit:execution>
 		<munit:validation>
 			<munit-tools:assert doc:name="Assert expression" doc:id="876a40fd-12eb-4075-a655-58015a82574d" />
 		</munit:validation>
 	</munit:test>
-
+	<flow name="world-demo-api-test-suiteFlow" doc:id="8dd46ae2-ec07-4d1e-b451-88d39e650cb8" >
+		<munit:set-event doc:name="Set Event" doc:id="af6d7045-450f-4f2a-9143-3e292d26eeff">
+				<munit:attributes value="#[{uriParams : { region : 'Asia', city : 'Kolkata'}}]" />
+			</munit:set-event>
+	</flow>
+<munit:test name="world-demo-api-test-suite-world-demo-apiFlowTest2" doc:id="66804cb8-b7f2-43cf-ac6e-7492ab3412db" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow Reference" doc:id="15e0aecc-0274-4476-984e-100bcb87fddc" name="world-demo-api-test-suiteFlow"/>
+			<flow-ref doc:name="Flow-ref to world-demo-apiFlow" doc:id="bbdfe987-0fcb-4354-8521-c29e24f443a2" name="world-demo-apiFlow"/>
+		</munit:execution>
+		<munit:validation>
+			<munit-tools:assert doc:name="Assert expression" doc:id="d59d7945-7e63-43d9-92dc-aa6e27f218a6" >
+				<munit-tools:that ><![CDATA[#[import * from dw::test::Asserts 
+ ---
+payload.dst must equalTo(true)]]]></munit-tools:that>
+			</munit-tools:assert>
+		</munit:validation>
+	</munit:test>
+	
 
 </mule>
